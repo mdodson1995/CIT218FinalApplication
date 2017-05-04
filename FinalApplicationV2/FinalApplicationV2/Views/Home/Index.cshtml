@@ -1,0 +1,20 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>MovieData</h1>
+    <p class="lead">Using Code First with Entity Framework, Partial Views, Roles, Reviews, and other counterparts</p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Top 5 Movies</h2>
+        @{Html.RenderAction("SmallMovieDetails", "ViewMovies");}
+    </div>
+    <div class="col-md-4">
+        <h2>All the Movies. All the Time.</h2>
+        <p><a class="btn btn-default" href="http://www.imdb.com">Learn more &raquo;</a></p>
+    </div>
+
+</div>
